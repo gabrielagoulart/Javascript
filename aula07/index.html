@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Vamos fazer algumas operações</h1>
+
+    <script>
+       
+        var nome = prompt ('Qual é o seu nome?')
+        alert (`É um grande prazer te conhecer, ${nome}`)
+        var n1 = Number (prompt (` ${nome}, me conte aqui em baixo o seu número favorito`))
+        var n2 = Number (prompt ('Digite uma segunda opção de número'))
+
+
+        document.write (`Seu número somado por ele mesmo é ${n1 + n1}! <br>`)
+        document.write (`Seu número favorito vezes ele mesmo é ${n1 * n1}! <br>`)
+
+        document.write (`Utilizaremos agora a sua segunda opção de número, o ${n2} <br>`)
+        document.write (`O número somado por ele mesmo é ${n2 + n2} <br>`)
+        document.write (`O número vezes ele mesmo é ${n2 * n2} <br>`)
+
+        document.write (`Já o seu número favorito somado a sua segunda opção, seria ${n1 + n2} <br>`)
+        document.write (`Subtraíndo os dois, teríamos ${n1 - n2} <br>`)
+        
+    </script>
+</body>
+</html>
