@@ -20,16 +20,19 @@
     <button onclick="clicou()">Comprar produto</button>
 
     <script>
+
         function clicou() {
-           
-            let produto = prompt('Qual produto você está comprando?')
-            let custo = prompt(`Quanto custo o ${produto} que você está comprando?`)
-            let valor = prompt(`Qual foi o valor que você deu para pagar o ${produto}?`)
-            let troco = custo - valor 
-            let conta = alert(`Você comprou um ${produto} que custou ${custo} reais. 
-Deu ${valor} em dinheiro e vai receber ${troco} reais de troco. 
+            
+            let produto = prompt(`Qual produto você está comprando?`) 
+            let custou =  Number (prompt(`Quanto custa o ${produto} que você está comprando?`))
+            let valor = Number (prompt(`Qual foi o valor que você deu para pagar o ${produto}?`))
+            let troco = valor - custou
+            let conta = alert(`Você comprou um ${produto} que custou ${custou.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}. 
+Deu ${valor.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})} e vai receber ${troco.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})} de troco. 
 Volte sempre!`)
+
         }
+
     </script>
 </body>
 </html>
