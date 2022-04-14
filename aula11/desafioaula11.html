@@ -18,9 +18,7 @@
       function verificarNacionalidade() {
         let pais = document.querySelector('input#txtNacionalidade').value.toLowerCase()
         let res = document.querySelector('div#res')
-        
-        res.innerHTML = `<p>Você vive no país ${pais}`
-        console.log(pais) 
+         
         if  (pais == 'brasil') {
                 res.innerHTML = `Nascendo em ${pais}, você é <strong> SIM </strong> um Brasileiro!`
         } else {
