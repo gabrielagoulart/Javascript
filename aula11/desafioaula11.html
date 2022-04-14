@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidades</title>
+</head>
+<body>
+    <h1>Sistema de nacionalidades</h1>
+    Informe a nacionalidade: <input type="text" name="txtNacionalidade" id="txtNacionalidade">
+    <input type="button" value="Verificar" onclick="verificarNacionalidade()">
+    <div id="res">
+       
+    </div> 
+
+<script>   
+      function verificarNacionalidade() {
+        let pais = document.querySelector('input#txtNacionalidade').value.toLowerCase()
+        let res = document.querySelector('div#res')
+        
+        res.innerHTML = `<p>Você vive no país ${pais}`
+         console.log(pais) 
+        if  (pais == 'brasil') {
+                res.innerHTML = `Nascendo em ${pais}, você é <strong> SIM </strong> um Brasileiro!`
+        } else {
+                res.innerHTML = `Nascendo em ${pais}, você <strong> NÃO </strong> é Brasileiro` 
+         }
+    } 
+    
+</script>
+</body>
+</html>
