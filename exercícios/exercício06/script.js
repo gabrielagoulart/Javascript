@@ -62,3 +62,7 @@ function finalizar() {
         <p>A média dos valores informados é ${media}.</p>`
     }
 }
+
+function limpar() {
+    window.location.reload()
+}
